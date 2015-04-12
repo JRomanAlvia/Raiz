@@ -1,4 +1,4 @@
-<div class="view">
+<div class="view" style="background: #f7f7f7;">
 
 		<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->id),array('view','id'=>$data->id)); ?>
@@ -12,9 +12,7 @@
 	<?php echo CHtml::encode($data->email); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('password')); ?>:</b>
-	<?php echo CHtml::encode($data->password); ?>
-	<br />
+	
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('tipo')); ?>:</b>
 	<?php echo CHtml::encode($data->tipo); ?>

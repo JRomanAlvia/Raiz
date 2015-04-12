@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
-	'Usuarioses'=>array('index'),
-	'Manage',
+	'Usuarios'=>array('index'),
+	'Administrar',
 );
 
 $this->menu=array(
@@ -22,8 +22,8 @@ return false;
 });
 ");
 ?>
-
-<h1>Administrar Usuarios</h1>
+<center><img class="img-responsive" alt="Responsive image" style="width: 100px;height: 100px;" src="http://cdn.flaticon.com/png/256/69115.png"/></center>
+<h1>Colegas</h1>
 
 <?php $this->widget('booster.widgets.TbGridView',array(
 'id'=>'usuarios-grid',
@@ -33,8 +33,8 @@ return false;
 		'id',
 		'nick',
 		'email',
-		'password',
-		'tipo',
+		//'password',
+		//'tipo',
 		'nombre',
 		/*
 		'apellido',

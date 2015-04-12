@@ -28,11 +28,12 @@ $this->widget(
                     array('label' => 'Inicio', 'url' => '#'),
                     //array('label' => 'Mapa de Cultivos', 'url' => array('/site/mapa')),
                     array(
-                        'label' => 'Usuarios',
+                        'label' => 'Colegas',
                         'items' => array(
-                            array('label' => 'Listar', 'url' => array('/Usuarios/index')),
-                            array('label' => 'Crear', 'url' => array('/Usuarios/create')),
-                            array('label' => 'Administrar', 'url' => array('/Usuarios/admin'))
+                            //array('label' => 'Listar', 'url' => array('/Usuarios/index')),
+                            
+                            array('label' => 'Listar', 'url' => array('/Usuarios/admin')),
+                            array('label' => 'Crear Cuenta', 'url' => array('/Usuarios/create'))
                         )
                     ),
                     array(
@@ -54,9 +55,9 @@ $this->widget(
                     array(
                         'label' => 'Plantas',
                         'items' => array(
-                            array('label' => 'Listar', 'url' => array('/Plantas/index')),
+                           // array('label' => 'Listar', 'url' => array('/Plantas/index')),
                             array('label' => 'Crear', 'url' => array('/Plantas/create')),
-                            array('label' => 'Administrar', 'url' => array('/Plantas/admin'))
+                            array('label' => 'Listar', 'url' => array('/Plantas/admin'))
                         )
                     ),
                     array(

@@ -13,22 +13,7 @@ array('label'=>'Manage Plantas','url'=>array('admin')),
 );
 ?>
 
-<h1>View Plantas #<?php echo $model->id; ?></h1>
-
-<?php $this->widget('booster.widgets.TbDetailView',array(
-'data'=>$model,
-'attributes'=>array(
-		'id',
-		'descripcion',
-		'descripcion_cientifica',
-		'tiempo_cocecha',
-		'epoca_anio',
-		'imagen',
-		'padre_id',
-),
-)); ?>
-
-
+<h1>Info Planta #<?php echo $model->id; ?></h1><br/>
 <?php $this->widget(
     'booster.widgets.TbButton',
     array(
@@ -40,6 +25,22 @@ array('label'=>'Manage Plantas','url'=>array('admin')),
         ),
     )
 );?>
+<br/><br/><br/>
+<?php $this->widget('booster.widgets.TbDetailView',array(
+'data'=>$model,
+'attributes'=>array(
+		//'id',
+		'descripcion',
+		'descripcion_cientifica',
+		'tiempo_cocecha',
+		'epoca_anio',
+		//'imagen',
+		//'padre_id',
+),
+)); ?>
+
+
+
 
 <?php $this->beginWidget(
     'booster.widgets.TbModal',
@@ -48,7 +49,7 @@ array('label'=>'Manage Plantas','url'=>array('admin')),
  
     <div class="modal-header">
         <a class="close" data-dismiss="modal">&times;</a>
-        <h4>Modal header</h4>
+        <h4>Pestes y Pesticidas</h4>
     </div>
  
     <div class="modal-body">
@@ -60,15 +61,7 @@ array('label'=>'Manage Plantas','url'=>array('admin')),
     </div>
  
     <div class="modal-footer">
-        <?php $this->widget(
-            'booster.widgets.TbButton',
-            array(
-                'context' => 'primary',
-                'label' => 'Save changes',
-                'url' => '#',
-                'htmlOptions' => array('data-dismiss' => 'modal'),
-            )
-        ); ?>
+     
         <?php $this->widget(
             'booster.widgets.TbButton',
             array(

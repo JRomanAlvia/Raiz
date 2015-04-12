@@ -50,8 +50,20 @@ array('deny',  // deny all users
 */
 public function actionView($id)
 {
+    
+     $modeloCultivos= new Cultivo;
+            $modeloCultivos->Usuarios_id= $id;          
+            if (isset($_POST['Cultivo'])) {
+                $modeloCultivos->attributes=$_POST['Cultivo'];               
+                if ($modeloCultivos->save()) {
+                    $this->redirect(array('view','id'=>$id));
+                }
+            }
+    
+    
 $this->render('view',array(
 'model'=>$this->loadModel($id),
+'modeloCultivos'=>$modeloCultivos,
 ));
 }
 

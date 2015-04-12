@@ -11,7 +11,25 @@
 
 	<?php echo $form->textFieldGroup($model,'latitud',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>45)))); ?>
 
-	<?php echo $form->textFieldGroup($model,'fecha_inicio',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>45)))); ?>
+	<?php 
+        //echo $form->textFieldGroup($model,'fecha_inicio',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>45)))); 
+        ?>
+<?php echo $form->datePickerGroup(
+			$model,
+			'fecha_inicio',
+			array(
+				'widgetOptions' => array(
+					'options' => array(
+						'language' => 'es',
+					),
+				),
+				'wrapperHtmlOptions' => array(
+					'class' => 'col-sm-5',
+				),
+				'hint' => 'Click inside! This is a super cool date field.',
+				'prepend' => '<i class="glyphicon glyphicon-calendar"></i>'
+			)
+		); ?>
 
 	<?php echo $form->textFieldGroup($model,'area_cultivo',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>45)))); ?>
 

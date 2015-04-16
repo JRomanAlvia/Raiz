@@ -13,7 +13,7 @@ array('label'=>'Manage Cultivo','url'=>array('admin')),
 );
 ?>
 
-<h1>View Cultivo #<?php echo $model->id; ?></h1>
+<h1>Ver Cultivo #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('booster.widgets.TbDetailView',array(
 'data'=>$model,
@@ -23,7 +23,7 @@ array('label'=>'Manage Cultivo','url'=>array('admin')),
 		'latitud',
 		'fecha_inicio',
 		'area_cultivo',
-		'tipo_medida',
+		//'tipo_medida',
 		'num_planta',
 		'cantidad_cosecha',
 		'estado',

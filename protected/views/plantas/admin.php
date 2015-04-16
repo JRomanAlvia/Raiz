@@ -26,18 +26,18 @@ return false;
 <h1>Administrar Plantas</h1>
 
 
-<center><img class="img-responsive" alt="Responsive image" style="width: 100px;height: 100px;" src="http://cdn.flaticon.com/png/256/31745.png"/></center>
+<center><img class="img-responsive" alt="Responsive image" style="width: 100px;height: 100px;" src="http://cdn.flaticon.com/png/256/40486.png"/></center>
 <?php $this->widget('booster.widgets.TbGridView',array(
 'id'=>'plantas-grid',
 'dataProvider'=>$model->search(),
 'filter'=>$model,
 'columns'=>array(
-		'id',
+		//'id',
 		'descripcion',
 		'descripcion_cientifica',
 		'tiempo_cocecha',
 		'epoca_anio',
-		'imagen',
+		//'imagen',
 		/*
 		'padre_id',
 		*/
